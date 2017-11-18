@@ -1,0 +1,32 @@
+<head>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+<script src="/static/js/chat.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+{% block extra %}
+{% endblock %}
+</head>
+
+
+<body>
+
+<div class = 'b-content'>
+<div class = 'b-header'>
+<div class = 'b-header__logo'>
+<span>PyChat</span>
+</div>
+{% block title %}
+{% endblock %}
+</div>
+{% block content %}
+
+{% endblock %}
+<form name = 'message-form' class = 'message-form'>
+<input type = 'text' placeholder = 'Enter your message' class = 'type-message'>
+<input type = 'button' class = 'send-message' value = 'Send'>
+</form>
+</div>
+
+</body>

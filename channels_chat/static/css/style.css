@@ -1,0 +1,45 @@
+body{
+	padding: 0px;
+	margin: 0px;
+	background-color: #5b8991;
+	font-family: Roboto;
+}
+.b-content{
+	position: relative;
+	margin: 20px auto;
+	width: 60%;
+	background-color: #fff;
+	height: 90%;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.b-header{
+	padding: 20px 12px;
+	background-color: #124f67;
+}
+.b-header__logo{
+	color: #fff;
+	font-size: 20px;
+}
+.type-message{
+	width: 70%;
+	outline: none;
+	border: none;
+	padding: 8px 12px;
+	margin: 0px;
+	font-size: 18px;
+}
+.send-message{
+	float: right;
+	border: 0px;
+	padding: 11px 0px;
+	margin: 0px;
+	outline: 0px;
+	width: 30%;
+}
+.message-form{
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
