@@ -2,14 +2,6 @@
 
 {% block content %}
 <div id = 'chat' class = 'messages'>
-<div class = 'message clearfix'>
-<div class = 'message__user'>
-Username
-</div>
-<div class = 'message__text'>
-Lorem ipsum
-</div>
-</div>
 </div>
 <script>
 window.onload = function(){
@@ -18,7 +10,7 @@ window.onload = function(){
     var button = form.elements['send-message'];
     var input = form.elements['type-message'];
     button.onclick = function(e){
-    	sendMessage('post_message', input.value);
+    	sendMessage('message', input.value);
     	input.value = '';
     	return false;
     }
