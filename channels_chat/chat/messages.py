@@ -21,12 +21,12 @@ class SystemMessage(Message):
         super().__init__(*args, **kwargs)
 
 
+
 def message(*args, **kwargs):
     return Message(*args, **kwargs)
 
 
 def system(*args, **kwargs):
     return SystemMessage(*args, **kwargs)
-
 
 
