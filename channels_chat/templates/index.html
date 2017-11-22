@@ -3,12 +3,17 @@
 {% block content %}
 <div id = 'chat' class = 'messages'>
 </div>
+<form name = 'message-form' class = 'message-form'>
+<input name = 'type-message' type = 'text' placeholder = 'Enter your message' class = 'type-message'>
+<input name = 'send-message' type = 'button' class = 'send-message'>
+</form>
 <script>
 window.onload = function(){
     startChat();
     var form = document.forms[0];
     var button = form.elements['send-message'];
     var input = form.elements['type-message'];
+    input.focus();
     button.onclick = function(e){
     	sendMessage('message', input.value);
     	input.value = '';
